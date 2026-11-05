@@ -1,0 +1,29 @@
+<ul {!! $options !!}>
+    @foreach ($menu_nodes as $key => $row)
+    <li class="menu-item @if ($row->hasChild()) menu-item-has-children @endif {{ $row->css_class }} @if ($row->getRelated()->url == Request::url()) active @endif">
+        <a rel=“canonical” href="{{ $row->getRelated()->url }}" target="{{ $row->target }}">
+            @if(trim($options)=='class="sub-menu"')
+            {{-- <h2> --}}
+                @if ($row->icon_font)<i class='{{ trim($row->icon_font) }}'></i> @endif{{ $row->getRelated()->name }}
+            {{-- </h2> --}}
+                
+            @else
+            <div>
+                @if ($row->icon_font)<i class='{{ trim($row->icon_font) }}'></i> @endif{{ $row->getRelated()->name }}
+            </div>
+            @endif
+
+        </a>
+        @if ($row->hasChild())
+            {!!
+                Menu::generateMenu([
+                    'slug' => $menu->slug,
+                    'view' => 'main-menu',
+                    'options' => ['class' => 'sub-menu'],
+                    'parent_id' => $row->id,
+                ])
+            !!}
+        @endif
+    </li>
+    @endforeach
+</ul>

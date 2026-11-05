@@ -1,0 +1,26 @@
+<?php
+
+return [
+    'platform_admin' => '后台管理',
+    'dashboard' => '仪表盘',
+    'appearance' => '显示',
+    'menu' => '菜单',
+    'widgets' => '小工具',
+    'theme_options' => '模板配置',
+    'plugins' => '插件',
+    'settings' => '设置',
+    'setting_general' => '通用',
+    'setting_email' => '电子邮件',
+    'system_information' => '系统信息',
+    'theme' => '模板',
+    'copyright' => 'Copyright :year &copy; :company. Version: <span>:version</span>',
+    'profile' => '个人信息',
+    'logout' => '退出',
+    'no_search_result' => '无匹配结果，请使用其他关键字',
+    'home' => '主页',
+    'search' => '查找',
+    'add_new' => '新增',
+    'n_a' => 'N/A',
+    'page_loaded_time' => '页面载入时间',
+    'view_website' => '查看网站',
+];

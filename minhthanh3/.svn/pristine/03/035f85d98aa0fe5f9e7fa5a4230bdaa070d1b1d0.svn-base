@@ -1,0 +1,360 @@
+<?php return array (
+  'barryvdh/laravel-cors' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\Cors\\ServiceProvider',
+    ),
+  ),
+  'barryvdh/laravel-debugbar' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\Debugbar\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Debugbar' => 'Barryvdh\\Debugbar\\Facade',
+    ),
+  ),
+  'barryvdh/laravel-dompdf' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\DomPDF\\ServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'PDF' => 'Barryvdh\\DomPDF\\Facade',
+    ),
+  ),
+  'barryvdh/laravel-ide-helper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Barryvdh\\LaravelIdeHelper\\IdeHelperServiceProvider',
+    ),
+  ),
+  'beyondcode/laravel-dump-server' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'BeyondCode\\DumpServer\\DumpServerServiceProvider',
+    ),
+  ),
+  'botble/api' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Api\\Providers\\ApiServiceProvider',
+    ),
+  ),
+  'botble/assets' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Assets\\Providers\\AssetsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Assets' => 'Botble\\Assets\\Facades\\AssetsFacade',
+    ),
+  ),
+  'botble/menu' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Menu\\Providers\\MenuServiceProvider',
+    ),
+  ),
+  'botble/optimize' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Optimize\\Providers\\OptimizeServiceProvider',
+    ),
+  ),
+  'botble/page' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Page\\Providers\\PageServiceProvider',
+    ),
+  ),
+  'botble/platform' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Base\\Providers\\BaseServiceProvider',
+      1 => 'Botble\\Base\\Providers\\CommandServiceProvider',
+      2 => 'Botble\\Base\\Providers\\EventServiceProvider',
+      3 => 'Botble\\Base\\Providers\\RouteServiceProvider',
+      4 => 'Botble\\Base\\Providers\\BreadcrumbsServiceProvider',
+      5 => 'Botble\\Base\\Providers\\ComposerServiceProvider',
+      6 => 'Botble\\Base\\Providers\\MailConfigServiceProvider',
+      7 => 'Botble\\Base\\Providers\\FormServiceProvider',
+      8 => 'Botble\\Base\\Providers\\HookServiceProvider',
+      9 => 'Botble\\Support\\Providers\\SupportServiceProvider',
+      10 => 'Botble\\Table\\Providers\\TableServiceProvider',
+      11 => 'Botble\\ACL\\Providers\\AclServiceProvider',
+      12 => 'Botble\\Dashboard\\Providers\\DashboardServiceProvider',
+      13 => 'Botble\\Media\\Providers\\MediaServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Assets' => 'Botble\\Base\\Facades\\AssetsFacade',
+      'MetaBox' => 'Botble\\Base\\Facades\\MetaBoxFacade',
+      'Action' => 'Botble\\Base\\Facades\\ActionFacade',
+      'Filter' => 'Botble\\Base\\Facades\\FilterFacade',
+      'EmailHandler' => 'Botble\\Base\\Facades\\EmailHandlerFacade',
+      'AdminBar' => 'Botble\\Base\\Facades\\AdminBarFacade',
+      'AdminBreadcrumb' => 'Botble\\Base\\Facades\\AdminBreadcrumbFacade',
+      'DashboardMenu' => 'Botble\\Base\\Facades\\DashboardMenuFacade',
+      'SiteMapManager' => 'Botble\\Base\\Facades\\SiteMapManagerFacade',
+      'JsonFeedManager' => 'Botble\\Base\\Facades\\JsonFeedManagerFacade',
+      'ChartBuilder' => 'Botble\\Base\\Facades\\ChartBuilderFacade',
+      'MailVariable' => 'Botble\\Base\\Facades\\MailVariableFacade',
+    ),
+  ),
+  'botble/revision' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Revision\\Providers\\RevisionServiceProvider',
+    ),
+  ),
+  'botble/seo-helper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\SeoHelper\\Providers\\SeoHelperServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'SeoHelper' => 'Botble\\SeoHelper\\Facades\\SeoHelperFacade',
+    ),
+  ),
+  'botble/shortcode' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Shortcode\\Providers\\ShortcodeServiceProvider',
+    ),
+  ),
+  'botble/slug' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Slug\\Providers\\SlugServiceProvider',
+    ),
+  ),
+  'botble/theme' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Theme\\Providers\\ThemeServiceProvider',
+    ),
+  ),
+  'botble/widget' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Botble\\Widget\\Providers\\WidgetServiceProvider',
+    ),
+  ),
+  'chumper/zipper' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Chumper\\Zipper\\ZipperServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Zipper' => 'Chumper\\Zipper\\Zipper',
+    ),
+  ),
+  'davejamesmiller/laravel-breadcrumbs' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'DaveJamesMiller\\Breadcrumbs\\BreadcrumbsServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Breadcrumbs' => 'DaveJamesMiller\\Breadcrumbs\\Facades\\Breadcrumbs',
+    ),
+  ),
+  'fideloper/proxy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Fideloper\\Proxy\\TrustedProxyServiceProvider',
+    ),
+  ),
+  'intervention/image' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Intervention\\Image\\ImageServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Image' => 'Intervention\\Image\\Facades\\Image',
+    ),
+  ),
+  'ixudra/curl' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Ixudra\\Curl\\CurlServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Curl' => 'Ixudra\\Curl\\Facades\\Curl',
+    ),
+  ),
+  'kris/laravel-form-builder' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Kris\\LaravelFormBuilder\\FormBuilderServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'FormBuilder' => 'Kris\\LaravelFormBuilder\\Facades\\FormBuilder',
+    ),
+  ),
+  'lab404/laravel-impersonate' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Lab404\\Impersonate\\ImpersonateServiceProvider',
+    ),
+  ),
+  'laravel/cashier' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Cashier\\CashierServiceProvider',
+    ),
+  ),
+  'laravel/passport' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Passport\\PassportServiceProvider',
+    ),
+  ),
+  'laravel/socialite' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Socialite\\SocialiteServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Socialite' => 'Laravel\\Socialite\\Facades\\Socialite',
+    ),
+  ),
+  'laravel/tinker' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravel\\Tinker\\TinkerServiceProvider',
+    ),
+  ),
+  'laravelcollective/html' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Collective\\Html\\HtmlServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Form' => 'Collective\\Html\\FormFacade',
+      'Html' => 'Collective\\Html\\HtmlFacade',
+    ),
+  ),
+  'laravelium/sitemap' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Laravelium\\Sitemap\\SitemapServiceProvider',
+    ),
+  ),
+  'maatwebsite/excel' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Maatwebsite\\Excel\\ExcelServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'Excel' => 'Maatwebsite\\Excel\\Facades\\Excel',
+    ),
+  ),
+  'mpociot/laravel-apidoc-generator' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Mpociot\\ApiDoc\\ApiDocGeneratorServiceProvider',
+    ),
+  ),
+  'nesbot/carbon' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Carbon\\Laravel\\ServiceProvider',
+    ),
+  ),
+  'nunomaduro/collision' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'NunoMaduro\\Collision\\Adapters\\Laravel\\CollisionServiceProvider',
+    ),
+  ),
+  'proengsoft/laravel-jsvalidation' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Proengsoft\\JsValidation\\JsValidationServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'JsValidator' => 'Proengsoft\\JsValidation\\Facades\\JsValidatorFacade',
+    ),
+  ),
+  'tightenco/ziggy' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Tightenco\\Ziggy\\ZiggyServiceProvider',
+    ),
+  ),
+  'yajra/laravel-datatables-buttons' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Yajra\\DataTables\\ButtonsServiceProvider',
+    ),
+  ),
+  'yajra/laravel-datatables-html' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Yajra\\DataTables\\HtmlServiceProvider',
+    ),
+  ),
+  'yajra/laravel-datatables-oracle' => 
+  array (
+    'providers' => 
+    array (
+      0 => 'Yajra\\DataTables\\DataTablesServiceProvider',
+    ),
+    'aliases' => 
+    array (
+      'DataTables' => 'Yajra\\DataTables\\Facades\\DataTables',
+    ),
+  ),
+);

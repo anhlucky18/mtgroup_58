@@ -1,0 +1,45 @@
+# Environment & Secret files
+.env
+.env.*
+!.env.example
+*.env
+
+# Dependencies
+vendor/
+node_modules/
+minhthanh3/vendor/
+minhthanh3/node_modules/
+
+# Storage & Cache (Laravel)
+minhthanh3/storage/*.key
+minhthanh3/storage/app/backup/
+minhthanh3/storage/framework/cache/*
+!minhthanh3/storage/framework/cache/.gitignore
+minhthanh3/storage/framework/sessions/*
+!minhthanh3/storage/framework/sessions/.gitignore
+minhthanh3/storage/framework/views/*
+!minhthanh3/storage/framework/views/.gitignore
+minhthanh3/storage/logs/*
+!minhthanh3/storage/logs/.gitignore
+minhthanh3/storage/cache_keys.json
+minhthanh3/storage/languages.json
+minhthanh3/storage/settings.json
+minhthanh3/storage/installing
+
+minhthanh3/*.sql
+
+# Public uploaded & generated files
+minhthanh3/public/hot
+minhthanh3/public/storage
+minhthanh3/public/mix-manifest.json
+
+# IDEs & OS files
+.idea/
+.vscode/
+.DS_Store
+Thumbs.db
+*.log
+npm-debug.log
+.vagrant
+__MACOSX/
+

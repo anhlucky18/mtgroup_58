@@ -1,0 +1,61 @@
+services:
+  # 1. PHP Application Service
+  app:
+    build:
+      context: ./php
+      dockerfile: Dockerfile
+    container_name: laravel_app
+    restart: unless-stopped
+    tty: true
+    environment:
+      SERVICE_NAME: app
+      SERVICE_TAGS: dev
+    working_dir: /var/www/minhthanh3
+    volumes:
+      - ./:/var/www
+      - ./php/local.ini:/usr/local/etc/php/conf.d/local.ini
+    networks:
+      - laravel_net
+
+  # 2. Nginx Web Server Service
+  webserver:
+    image: nginx:alpine
+    container_name: laravel_webserver
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    volumes:
+      - ./:/var/www
+      - ./nginx:/etc/nginx/conf.d/
+    networks:
+      - laravel_net
+    depends_on:
+      - app
+
+  # 3. MySQL 8 Database Service
+  db:
+    image: mysql:8.0
+    container_name: laravel_db
+    restart: unless-stopped
+    ports:
+      - "3307:3306"
+    environment:
+      MYSQL_DATABASE: minhthanh2
+      MYSQL_ROOT_PASSWORD: 123456
+      MYSQL_USER: anhnn
+      MYSQL_PASSWORD: 123456
+    # Giải quyết lỗi xác thực mysql_native_password của PHP 7.3 với MySQL 8
+    command: --default-authentication-plugin=mysql_native_password
+    volumes:
+      - dbdata:/var/lib/mysql
+      - ./minhthanh3/minhthanh2.sql:/docker-entrypoint-initdb.d/init.sql:ro
+    networks:
+      - laravel_net
+
+networks:
+  laravel_net:
+    driver: bridge
+
+volumes:
+  dbdata:
+    driver: local

@@ -1,0 +1,352 @@
+{{-- <footer data-background="{{ Theme::asset()->url('images/page-intro-01.png') }}" class="page-footer bg-dark pt-50 bg-parallax">
+    <div class="bg-overlay"></div>
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-3 col-md-3 col-sm-6 col-xs-12">
+                <aside class="widget widget--transparent widget__footer widget__about">
+                    <div class="widget__content">
+                        <header class="person-info">
+                            <div class="person-info__thumbnail"><a href="https://botble.com"><img src="{{ Theme::asset()->url('images/GST_logo-01.png') }}" alt="Minh Thanh Logo"></a></div>
+                            <div class="person-info__content">
+                                <h3 class="person-info__title">CÔNG TY TNHH MINH THÀNH GROUP</h3>
+
+                            </div>
+                        </header>
+                        <div class="person-detail">
+                            <p><i class="ion-home"></i>Địa chỉ: Trụ sở: 31 Nguyễn Khuyến, Võ Cường, Bắc Ninh VPĐD HN: 21T1, 83 Vũ Trọng Phụng, Thanh Xuân, Hà Nội VPĐD HCM: 224 Điện Biên Phủ, Quận 3, Hồ Chí Minh</p>
+                            <p><i class="ion-phone"></i>0963189981</p>
+                            <p><i class="ion-email"></i><a href="mailto:{{ setting('email_support') }}">{{ setting('email_support') }}</a></p>
+                        </div>
+                    </div>
+                </aside>
+            </div>
+            {!! dynamic_sidebar('footer_sidebar') !!}
+        </div>
+    </div>
+    <div class="page-footer__bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-8 col-sm-6 col-xs-12">
+                    <div class="page-copyright">
+                        <p>{!! __(theme_option('copyright')) !!}</p>
+                    </div>
+                </div>
+                <div class="col-md-4 col-sm-4 col-xs-12">
+                    <div class="page-footer__social">
+                        <ul class="social social--simple">
+                            <li><a href="{{ setting('facebook') }}" title="Facebook"><i class="fa fa-facebook"></i></a></li>
+                            <li><a href="{{ setting('twitter') }}" title="Twitter"><i class="fa fa-twitter"></i></a></li>
+                            <li><a href="{{ setting('google_plus') }}" title="Google"><i class="fa fa-google-plus"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+<div id="back2top"><i class="fa fa-angle-up"></i></div>
+</div> --}}
+
+{{-- custompage --}}
+<!-- start cta-section -->
+        <section class="cta-section">
+            <div class="container">
+                <div class="row">
+                    <div class="col col-lg-6 col-md-6">
+                        <div class="cta-text">
+                            <h3>{{ __('Contact Us') }}</h3>
+                            <p></p>
+                            <div class="office-info">
+                                <div>
+                                    <h3>{{ __('Headquarters') }}</h3>
+                                    <ul>
+                                        <li><i class="ti-home"></i>{{ __('No. 32 Nguyen Khuyen Street, Vo Cuong Ward, Bac Ninh City, Bac Ninh Province') }}</li>
+                                    </ul>
+                                </div>
+
+                                <div>
+                                    <h3>{{ __('Representative Office Ha Noi') }}</h3>
+                                    <ul>
+                                        <li><i class="ti-location-pin"></i>{{ __('Lac Hong Building, Lane 27 Le Van Luong, Nhan Chinh Ward, Thanh Xuan District, Hanoi City') }}</li>
+
+                                    </ul>
+                                </div>
+				
+				<div>
+				     <h3>{{ __('Central Vietnam branch') }}</h3>
+					<ul>
+					<li><i class="ti-location-pin"></i>{{ __('No. 46, Dang Van Hy, An Hung, Thanh Hoa City, Thanh Hoa Province') }}</li>
+
+					</ul>
+				</div>	
+                                <div>
+                                    <h3>{{ __('Representative Office Ho Chi Minh') }}</h3>
+                                    <ul>
+                                        <li><i class="ti-location-pin"></i>{{ __('No. 20 Street 1 CityLand Park Hills Residential Area, Go Vap District, Ho Chi Minh City') }}</li>
+
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col col-lg-5 col-lg-offset-1 col-md-6">
+                        <div class="contact-info">
+                            <div>
+                                <i class="fi flaticon-call"></i>
+                                <h4>{{ __('Phone Number') }}</h4>
+                                <p>+84-963189981</p>
+                            </div>
+                            <div>
+                                <i class="fi flaticon-contact"></i>
+                                <h4>Email </h4>
+                                <p>quantrac.mtg@gmail.com </p>
+                            </div>
+                            <div>
+                                <i class="fi flaticon-network"></i>
+                                <h4>{{ __('Tax Code') }}</h4>
+                                <p>2301052220</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div> <!-- end container -->
+        </section>
+        <!-- end cta-section -->
+
+        <!-- start site-footer -->
+        <footer class="site-footer">
+            <!-- <div class="upper-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
+                            <div class="widget about-widget">
+                                <div class="logo widget-title">
+                                    {{-- <img src="{{ asset('theme/images/footer-minhthanh-logo.png') }}" alt> --}}
+                                    <h3 style="color: black;">Minh Thanh Logo</h3>
+                                </div>
+                                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book</p>
+                                <div class="social-icons">
+                                    <ul>
+                                        <li><a href="#"><i class="ti-facebook"></i></a></li>
+                                        <li><a href="#"><i class="ti-twitter-alt"></i></a></li>
+                                        <li><a href="#"><i class="ti-linkedin"></i></a></li>
+                                        <li><a href="#"><i class="ti-pinterest"></i></a></li>
+                                        <li><a href="#"><i class="ti-vimeo-alt"></i></a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                         <div class="col col-lg-3 col-md-3 col-sm-6">
+                            <div class="widget link-widget">
+                                <div class="widget-title">
+                                    <h3>Usefull Links</h3>
+                                </div>
+                                <ul>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">Our services</a></li>
+                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#">Meet team</a></li>
+                                </ul>
+                                <ul>
+                                    <li><a href="#">Provacu Policy</a></li>
+                                    <li><a href="#">Testimonials</a></li>
+                                    <li><a href="#">News</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col col-lg-6 col-md-6 col-sm-6">
+                            <div class="widget contact-widget service-link-widget">
+                                <div class="widget-title">
+                                    <h3>Our Address</h3>
+                                </div>
+                                <ul>
+                                    <li>21T1, 83 Vũ Trọng Phụng, Thanh Xuân, Hà Nội </li>
+                                    <li><span>Phone:</span> 0963189981</li>
+                                    <li><span>Email:</span> quantrac@mtgroup.tech</li>
+                                    <li><span>Office Time:</span> 8AM- 5PM</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div> -->
+            <div class="lower-footer">
+                <div class="container">
+                    <div class="row">
+                        <div class="separator"></div>
+                        <div class="col col-xs-12">
+                            <p class="copyright"><a href="templateshub.net">Templates Hub</a></p>
+                            <div class="extra-link">
+                                <ul>
+                                    <li><a href="#">Privace & Policy</a></li>
+                                    <li><a href="#">Terms</a></li>
+                                    <li><a href="#">About us</a></li>
+                                    <li><a href="#">FAQ</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+        <!-- end site-footer -->
+
+
+    </div>
+    <!-- end of page-wrapper -->
+
+<!-- JS Library-->
+{!! Theme::footer() !!}
+
+@if (session()->has('success_msg'))
+    <script type="text/javascript">
+        swal('{{ __('Success') }}', "{{ session('success_msg', '') }}", 'success');
+    </script>
+@endif
+
+@if (session()->has('error_msg'))
+    <script type="text/javascript">
+        swal('{{ __('Success') }}', "{{ session('error_msg', '') }}", 'error');
+    </script>
+@endif
+<style>
+    #phone {
+        -webkit-animation: NAME-YOUR-ANIMATION 3s;
+        
+        color:#58CD64;
+        border: none; 
+        visibility: visible; 
+        bottom: 100px; 
+        right: 25px; 
+        position: fixed; 
+        width: 50px; 
+        z-index: 2147483644; 
+        height: 50px;
+    }
+    #phone:before {
+        font-family: FontAwesome;
+        content: "\f095";
+        font-size: 50px;
+    }
+    @-webkit-keyframes NAME-YOUR-ANIMATION{
+        0% {
+        }
+        10% {
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            -o-transform:rotate(5deg); 
+        }
+        20% {
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);       
+        }
+        30% {
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            -o-transform:rotate(5deg);       
+        }
+        40% {
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);       
+        }
+        50% {
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            -o-transform:rotate(5deg);       
+        }
+        60% {
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);       
+        }
+        70% {
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            -o-transform:rotate(5deg);       
+        }
+        80% {
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);       
+        }
+        90% {
+            -webkit-transform:rotate(5deg);
+            -moz-transform:rotate(5deg);
+            -o-transform:rotate(5deg);       
+        }
+        100% {
+            -webkit-transform:rotate(-5deg);
+            -moz-transform:rotate(-5deg);
+            -o-transform:rotate(-5deg);       
+        }
+        }
+</style>
+<a href="tel:+84963189981"><div id="phone"></div></a>
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            xfbml            : true,
+            version          : 'v10.0'
+        });
+    };
+
+    (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+</script>
+
+<!-- Your Plugin chat code -->
+<div class="fb-customerchat"
+     attribution="setup_tool"
+     page_id="100367992250913">
+</div>
+
+<!-- Messenger Plugin chat Code -->
+    {{-- <div id="fb-root"></div>
+
+    <!-- Your Plugin chat code -->
+    <div id="fb-customer-chat" class="fb-customerchat">
+    </div>
+
+    <script>
+      var chatbox = document.getElementById('fb-customer-chat');
+      chatbox.setAttribute("page_id", "100367992250913");
+      chatbox.setAttribute("attribution", "biz_inbox");
+      window.fbAsyncInit = function() {
+        FB.init({
+          xfbml            : true,
+          version          : 'v10.0'
+        });
+      };
+
+      (function(d, s, id) {
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) return;
+        js = d.createElement(s); js.id = id;
+        js.src = 'https://connect.facebook.net/vi_VN/sdk/xfbml.customerchat.js';
+        fjs.parentNode.insertBefore(js, fjs);
+      }(document, 'script', 'facebook-jssdk'));
+    </script> --}}
+<script type="text/javascript">
+    $(document).ready(function(){
+
+        openFancybox();
+        $('#popup-mt').fancybox();
+        setTimeout( function() {$.fancybox.close(); },10000);
+    });
+    function openFancybox() {
+        setTimeout( function() {$('#popup-mt').trigger('click'); });
+    };
+
+</script>
+</body>
+</html>

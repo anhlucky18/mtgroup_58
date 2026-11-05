@@ -1,0 +1,25 @@
+<?php
+
+return [
+    'update_position_success' => '更新小部件位置成功！',
+    'hide_success' => '更新小部件成功',
+    'confirm_hide' => '你确定吗？',
+    'hide_message' => '你真的想隐藏这个小部件吗？它会在仪表板上消失！',
+    'confirm_hide_btn' => '是的，隐藏这个小部件',
+    'cancel_hide_btn' => '取消',
+    'collapse_expand' => '折叠/展开',
+    'hide' => '隐藏',
+    'reload' => '重新加载',
+    'save_setting_success' => '保存小部件设置成功！',
+    'widget_not_exists' => '小部件不存在!',
+    'widget_posts_recent' => '最近新闻',
+    'widget_analytics_page' => '最常访问页面',
+    'widget_analytics_browser' => '浏览器排名',
+    'widget_analytics_referrer' => '推荐人排名',
+    'widget_analytics_general' => '站点分析',
+    'widget_audit_logs' => '管理日志',
+    'widget_request_errors' => '请求错误',
+    'manage_widgets' => '管理小工具',
+    'fullscreen' => '全屏',
+    'title' => '仪表盘',
+];

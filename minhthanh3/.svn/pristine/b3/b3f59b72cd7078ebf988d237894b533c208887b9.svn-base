@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<!--[if IE 7]><html class="ie ie7" lang="{{ app()->getLocale() }}"><![endif]-->
+<!--[if IE 8]><html class="ie ie8" lang="{{ app()->getLocale() }}"><![endif]-->
+<!--[if IE 9]><html class="ie ie9" lang="{{ app()->getLocale() }}"><![endif]-->
+<html lang="{{ app()->getLocale() }}">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+        <meta name="format-detection" content="telephone=no">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <!-- Fonts-->
+        <link href="https://fonts.googleapis.com/css?family={{ theme_option('primary_font', 'Roboto') }}" rel="stylesheet" type="text/css">
+        <link rel="icon" type="image/png" sizes="16x16" href="/storage/uploads/gst-logo-01.png">
+        <!-- CSS Library-->
+        <link rel="canonical" href="{{ url()->current() }}" />
+        <style>
+            body {font-family: '{{ theme_option('primary_font', 'Roboto') }}' sans-serif !important;}
+        </style>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-MHFCDPPW');</script>
+<!-- End Google Tag Manager -->
+        {!! Theme::header() !!}
+
+        <!--HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries-->
+        <!--WARNING: Respond.js doesn't work if you view the page via file://-->
+        <!--[if lt IE 9]><script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+        <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script><![endif]-->
+    </head>
+    <!--[if IE 7]><body class="ie7 lt-ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 8]><body class="ie8 lt-ie9 lt-ie10"><![endif]-->
+    <!--[if IE 9]><body class="ie9 lt-ie10"><![endif]-->
+    <body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MHFCDPPW"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+        <div class="page-wrapper">
+
+        <!-- start preloader -->
+        <div class="preloader">
+            <div class="loader">
+                <div class="gear two">
+                    <svg viewbox="0 0 100 100" fill="#131e4a">
+                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                    </svg>
+                </div>
+                <div class="gear three">
+                    <svg viewbox="0 0 100 100" fill="#fd5f17">
+                        <path d="M97.6,55.7V44.3l-13.6-2.9c-0.8-3.3-2.1-6.4-3.9-9.3l7.6-11.7l-8-8L67.9,20c-2.9-1.7-6-3.1-9.3-3.9L55.7,2.4H44.3l-2.9,13.6      c-3.3,0.8-6.4,2.1-9.3,3.9l-11.7-7.6l-8,8L20,32.1c-1.7,2.9-3.1,6-3.9,9.3L2.4,44.3v11.4l13.6,2.9c0.8,3.3,2.1,6.4,3.9,9.3      l-7.6,11.7l8,8L32.1,80c2.9,1.7,6,3.1,9.3,3.9l2.9,13.6h11.4l2.9-13.6c3.3-0.8,6.4-2.1,9.3-3.9l11.7,7.6l8-8L80,67.9      c1.7-2.9,3.1-6,3.9-9.3L97.6,55.7z M50,65.6c-8.7,0-15.6-7-15.6-15.6s7-15.6,15.6-15.6s15.6,7,15.6,15.6S58.7,65.6,50,65.6z"></path>
+                    </svg>
+                </div>
+            </div>
+        </div>
+        <!-- end preloader -->
+
+
+
+        <!-- Start header -->
+        <header id="header" class="site-header header-style-1">
+            <nav class="navigation navbar navbar-default">
+                <div class="container-fluid">
+                    <div class="navbar-header">
+                        <button type="button" class="open-btn">
+                            <span class="sr-only">Toggle navigation</span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                            <span class="icon-bar"></span>
+                        </button>
+                        <a class="navbar-brand" href="{{ url('/') }}"><h3>
+                        @if (!theme_option('logo'))
+                            {{-- <span>Bot</span>ble --}}
+                            <img src="/storage/uploads/gst-logo-01.png" alt="{{ setting('site_title') }}" height="50">
+                        @else
+                            <img src="{{ url(theme_option('logo')) }}" alt="{{ setting('site_title') }}" height="50">
+                        @endif
+                        </h3></a>
+                    </div>
+                    <div id="navbar" class="navbar-collapse collapse navigation-holder">
+                        <button class="close-navbar"><i class="ti-close"></i></button>
+
+                        {!!
+                            Menu::renderMenuLocation('main-menu', [
+                                'options' => ['class' => 'nav navbar-nav'],
+                                'view' => 'main-menu',
+                            ])
+                        !!}
+
+
+                    </div><!-- end of nav-collapse -->
+                    <div class="search-contact">
+                        <div class="header-search-area" style="display: inline-flex;">
+
+                                <a class="call" id="call-mtg" href="tel:+84963189981">
+                                    <i class="fi flaticon-call"></i>
+                                    <h5 id="phone-number">+84-963189981</h5>
+                                </a>
+
+                            @if (is_plugin_active('blog'))
+                            <div class="header-search-form">
+                                <form class="form quick-search" action="{{ route('public.search') }}">
+                                    <div>
+                                        <input type="text" name="q" class="form-control" placeholder="{{ __('Type to search...') }}">
+                                    </div>
+                                    <button type="submit" class="btn"><i class="ti-search"></i></button>
+                                </form>
+                                <div class="search-result"></div>
+                            </div>
+                            @endif
+                            <div>
+                                <button class="btn open-btn"><i class="ti-search"></i></button>
+                            </div>
+                        </div>
+                        <div class="language">
+                            <div class="switch-lang">
+                                {{-- <i class="fi flaticon-call"></i>
+                                <p>Gọi ngay </p>
+                                <h5>0963189981</h5> --}}
+                                {!! apply_filters('language_switcher') !!}
+                            </div>
+                        </div>
+                    </div>
+                </div><!-- end of container -->
+            </nav>
+        </header>
+        <!-- end of header -->
+

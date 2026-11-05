@@ -1,0 +1,67 @@
+{{-- <section data-background="{{ Theme::asset()->url('images/page-intro-02.jpg') }}" class="section page-intro pt-100 pb-100 bg-cover">
+    <div style="opacity: 0.7" class="bg-overlay"></div>
+    <div class="container">
+        <h3 class="page-intro__title">{{ $page->name }}</h3>
+        {!! Theme::breadcrumb()->render() !!}
+    </div>
+</section>
+<section class="section pt-50 pb-100">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-9">
+                <div class="page-content">
+                    <article class="post post--single">
+                        <div class="post__content">
+                            @if (defined('GALLERY_MODULE_SCREEN_NAME') && !empty($galleries = gallery_meta_data($page->id, PAGE_MODULE_SCREEN_NAME)))
+                                {!! render_object_gallery($galleries) !!}
+                            @endif
+                            {!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, $page->content, $page) !!}
+                        </div>
+                    </article>
+                </div>
+            </div>
+            <div class="col-lg-3">
+                <div class="page-sidebar">
+                    {!! Theme::partial('sidebar') !!}
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+ --}}
+<!-- start page-title -->
+<section class="page-title">
+    <div class="container">
+        <div class="row">
+            <div class="col col-xs-12">
+                <h1>{{ $page->name }}</h1>
+            </div>
+        </div> <!-- end row -->
+    </div> <!-- end container -->
+</section>        
+<!-- end page-title -->
+
+
+<section class="blog-single-section blog-single-left-sidebar-section section-padding">
+    <div class="container">
+        <div class="row">
+            <div class="col col-md-10 col-md-offset-1">
+                <div class="blog-content">
+                    <div class="post format-standard-image">
+                        <div class="entry-media">
+                            <img src="{{ $page->image }}">
+                        </div>
+                        <ul class="entry-meta">
+                            <li><a href="#"><i class="ti-time"></i>{{ date_from_database($page->created_at, 'M d, Y') }}</a></li>
+                        </ul>
+                        {{-- <h2>{{ $page->name }}</h2> --}}
+                        <p>{!! apply_filters(PAGE_FILTER_FRONT_PAGE_CONTENT, $page->content, $page) !!}</p>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div> <!-- end container -->
+</section>
+
