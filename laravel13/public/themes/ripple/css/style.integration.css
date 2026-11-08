@@ -1,0 +1,17 @@
+.page-title {
+    background: url(/storage/uploads/vinatic-hai-phong/water6.jpg) center center/cover no-repeat local;
+}
+.why-choose-grids.clearfix .grid {
+    height: 340px !important;
+}
+.service-section-s2 .service-grids .grid img {
+    width: 100%;
+    height: 240px;
+    aspect-ratio: 540 / 360;
+    object-fit: cover;
+}
+@media (max-width: 767px) {
+    .service-section-s2 .service-grids .grid img {
+        height: auto;
+    }
+}

@@ -9,6 +9,22 @@ vendor/
 node_modules/
 minhthanh3/vendor/
 minhthanh3/node_modules/
+laravel13/vendor/
+laravel13/node_modules/
+bin/composer
+
+# Storage & Cache (Laravel)
+laravel13/storage/*.key
+laravel13/storage/framework/cache/*
+!laravel13/storage/framework/cache/.gitignore
+laravel13/storage/framework/sessions/*
+!laravel13/storage/framework/sessions/.gitignore
+laravel13/storage/framework/views/*
+!laravel13/storage/framework/views/.gitignore
+laravel13/storage/logs/*
+!laravel13/storage/logs/.gitignore
+laravel13/public/storage
+laravel13/public/build
 
 # Storage & Cache (Laravel)
 minhthanh3/storage/*.key
